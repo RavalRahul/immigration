@@ -50,6 +50,12 @@
 
     <!-- TEMPLATE CSS -->
     <link href="css/red.css" rel="stylesheet">
+    <style>
+        ul, li, a {
+            text-decoration: none !important;
+            list-style: none !important;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -65,7 +71,7 @@
 
                 <!-- HEADER
 			============================================= -->
-                <header id="header-2" class="header white-menu" style="margin-bottom: 20px">
+                <header id="header-2" class="header white-menu" style="margin-bottom: 0px">
                     <div class="header-wrapper">
 
 
@@ -73,10 +79,12 @@
                         <div class="wsmobileheader clearfix">
                             <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
                             <span class="smllogo">
-                                <img src="images/logo-black.png" width="200" height="50" alt="mobile-logo" /></span>
-                            <%--<a href="tel:8849545742" class="callusbtn"><i class="fas fa-phone"></i></a>--%>
-                            <a href="https://wa.me/8849545742" class="callusbtn txt-400"><i class="fa fa-whatsapp"></i></a>
+                                <a href="Default.aspx">
+                                    <%--<img src="images/logo-black.png" width="200" height="50" alt="mobile-logo" /></span>--%>
+                                    <img src="images/logos/logo.png" style="object-fit: contain;" width="200" height="50" alt="logo" /></a>
 
+                                <%--<a href="tel:8849545742" class="callusbtn"><i class="fas fa-phone"></i></a>--%>
+                                <a href="https://wa.me/918849545742" target="_blank" class="callusbtn txt-400"><i class="fa fa-whatsapp"></i></a>
                         </div>
 
 
@@ -87,14 +95,18 @@
                                 <!-- Infotmation -->
                                 <div class="headertopleft">
                                     <div class="header-info clearfix">
-                                        <span class="txt-400"><i class="fas fa-map-marker-alt"></i>121 King St, Melbourne, Victoria 3000</span>
+                                        <span class="txt-400"><i class="fas fa-map-marker-alt"></i>
+                                            
+                                                    4,Hariomnagar Society near Jalaram temple, at demai road, Himatnagar
+                                                
+                                        </span>
                                     </div>
                                 </div>
 
                                 <!-- Contacts -->
                                 <div class="headertopright header-contacts">
-                                    <a href="tel:8849545742" class="callusbtn txt-400"><i class="fas fa-phone"></i>8849545742</a>
-                                    <a href="https://wa.me/8849545742" class="callusbtn txt-400"><i class="fa fa-whatsapp"></i>8849545742</a>
+                                    <%--<a href="tel:8849545742" class="callusbtn txt-400"><i class="fas fa-phone"></i>8849545742</a>--%>
+                                    <a href="https://wa.me/918849545742" target="_blank" class="callusbtn txt-400"><i class="fa fa-whatsapp"></i>8849545742</a>
 
                                     <%--<a href="tel:123456789" class="callusbtn b-right txt-400">&#8194;+61-2 7890 3456</a>--%>
                                     <a href="mailto:31120.ishan@gmail.com" class="txt-400"><i class="far fa-envelope-open"></i>31120.ishan@gmail.com</a>
@@ -113,9 +125,10 @@
                                 <!-- LOGO IMAGE -->
                                 <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 90 pixels) -->
                                 <div class="desktoplogo">
-                                    <a href="#hero-1" class="logo-black">
-                                        <%--<img src="images/logo-black.png" width="180" height="45" alt="header-logo"></a>--%>
-                                        <h3 style="margin-top: 15px"><i class="fa fa-plane"></i>ISHAN IMMIGRATION</h3>
+                                    <a href="Default.aspx" class="logo-black">
+                                        <%--<img src="images/logo-black.png" width="180" height="45" alt="header-logo">--%>
+                                        <img src="images/logos/logo.png" style="object-fit: contain; transform: scale(1.5)" width="180" height="45" alt="logo" /></a>
+                                    <%--<h3 style="margin-top: 15px"><i class="fa fa-plane"></i>ISHAN IMMIGRATION</h3>--%>
                                 </div>
                                 <div class="desktoplogo">
                                     <a href="#hero-1" class="logo-white">
@@ -134,14 +147,23 @@
                                         <!-- SIMPLE NAVIGATION LINK -->
                                         <li class="nl-simple" aria-haspopup="true"><a href="Default.aspx">Home</a></li>
                                         <li class="nl-simple" aria-haspopup="true"><a href="About.aspx">About</a></li>
+                                        <li class="nl-simple" aria-haspopup="true"><a href="gallery.aspx">Gallery</a></li>
                                         <li class="nl-simple" aria-haspopup="true"><a href="universities.aspx">universities</a></li>
                                         <li class="nl-simple" aria-haspopup="true"><a href="LatestNews.aspx">Latest News</a></li>
 
+                                        <li aria-haspopup="true"><a href="#">Samples<span class="wsarrow"></span></a>
+                                            <ul class="sub-menu">
+                                                <li aria-haspopup="true"><a href="Sop.aspx">SOP</a></li>
+                                                <li aria-haspopup="true"><a href="Lor.aspx">LOR</a></li>
+                                                <li aria-haspopup="true"><a href="Moi.aspx">MOi</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- END DROPDOWN MENU -->
 
 
                                         <!-- LAST NAVIGATION LINK -->
                                         <li class="nl-simple" aria-haspopup="true">
-                                            <a href="contacts-1.html" class="header-btn btn-primary tra-black-hover last-link">Login/Signup</a>
+                                            <a href="Details.aspx"  target="_blank" class="header-btn btn-primary tra-black-hover last-link">Apply Now</a>
                                         </li>
 
 
@@ -157,6 +179,19 @@
                     </div>
                     <!-- End header-wrapper -->
                 </header>
+
+                <%-- Whatsapp --%>
+
+                <div class="wp" style="position:fixed;bottom: 20px;right: 30px;z-index:21474836499;padding:5px 10px;background:white;border-radius:10px">
+
+                    <a href="https://wa.me/918849545742" target="_blank" class="callusbtn txt-400" style="color:green;font-size:2rem"><i class="fa fa-whatsapp"></i></a>
+
+                </div>
+
+                <%-- Whatsapp --%>
+
+
+
                 <!-- END HEADER -->
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
@@ -169,29 +204,7 @@
 
 
                             <!-- FOOTER CONTACTS -->
-                            <div class="col-lg-3 col-xl-3">
-                                <div class="footer-box mb-40">
 
-                                    <!-- Title -->
-                                    <h5 class="h5-md">Contact Details</h5>
-
-                                    <!-- Address -->
-                                    <p class="p-sm">121 King Street, Melbourne,</p>
-                                    <p class="p-sm">Victoria 3000 Australia</p>
-
-                                    <!-- Phone -->
-                                    <p class="p-sm mt-20">Phone: +12 9 8765 4321</p>
-
-                                    <!-- Email -->
-                                    <p class="p-sm foo-email">Email: <a href="mailto:yourdomain@mail.com">hello@demo.com</a></p>
-
-                                    <!-- Working Hours -->
-                                    <p class="p-sm mt-20">Mon-Fri: 9:00AM - 6:30PM</p>
-                                    <p class="p-sm">Saturday: 8:30AM - 3:30PM</p>
-                                    <p class="p-sm">Sunday: Closed</p>
-
-                                </div>
-                            </div>
 
 
                             <!-- FOOTER LINKS -->
@@ -199,17 +212,18 @@
                                 <div class="footer-links mb-40">
 
                                     <!-- Title -->
-                                    <h5 class="h5-md">Useful Links</h5>
+                                    <h5 class="h5-md text-left">Useful Links</h5>
 
                                     <!-- Footer Links -->
                                     <ul class="foo-links clearfix">
-                                        <li><a href="#">About ImmiEx</a></li>
-                                        <li><a href="#">Visa Information</a></li>
-                                        <li><a href="#">Immigration FAQ</a></li>
-                                        <li><a href="#">Immigration Assistance</a></li>
-                                        <li><a href="#">ImmiEx Testimonials</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">Terms and Conditions</a></li>
+                                        <div style="display: flex; justify-content: flex-start; flex-direction: column">
+                                            <li><a href="#request-1">Contact Us</a></li>
+                                            <li><a href="#tabs-2">
+                                                <p class="p-md">
+                                                    4,Hariomnagar Society near Jalaram temple, at demai road, Himatnagar
+                                                </p>
+                                            </a></li>
+                                        </div>
                                     </ul>
 
                                 </div>
@@ -217,52 +231,44 @@
 
 
                             <!-- FOOTER LINKS -->
-                            <div class="col-lg-3 col-xl-3">
-                                <div class="footer-links mb-40">
-
-                                    <!-- Title -->
-                                    <h5 class="h5-md">Visas</h5>
-
-                                    <!-- Footer Links -->
-                                    <ul class="foo-links clearfix">
-                                        <li><a href="visa-details.html">Visitor Visas</a></li>
-                                        <li><a href="visa-details.html">Permanent Residence Visas</a></li>
-                                        <li><a href="visa-details.html">Business Visas</a></li>
-                                        <li><a href="visa-details.html">Working Holiday Visas</a></li>
-                                        <li><a href="visa-details.html">Studying & Training Visas</a></li>
-                                        <li><a href="visa-details.html">Skilled Work Visas</a></li>
-                                        <li><a href="visa-details.html">Family & Partner Visas</a></li>
-                                    </ul>
-                                </div>
-                            </div>
 
 
                             <!-- FOOTER NEWSLETTER FORM -->
                             <div class="col-lg-3 col-xl-3">
-                                <div class="footer-form mb-20">
+                                <div class="footer-form mb-20 ">
 
                                     <!-- Title -->
-                                    <h5 class="h5-md">Stay Always In Touch</h5>
+                                    <h5 class="h5-md text-left">Stay Always In Touch</h5>
 
-                                    <!-- Newsletter Form Input -->
-                                    <form class="newsletter-form">
-
-                                        <div class="input-group">
-                                            <input type="email" class="form-control" placeholder="Your email address" required id="s-email">
-                                            <span class="input-group-btn">
-                                                <button type="submit" class="btn btn-primary tra-black-hover">Subscribe</button>
-                                            </span>
+                                    <div style="display: flex; justify-content: flex-start; flex-direction: column">
+                                        <div>
+                                            <a target="_blank" href="tel:8849545742" class=" txt-400"><i class="fas fa-phone p-1 mb-3"></i>8849545742</a>
                                         </div>
+                                        <div>
 
-                                        <!-- Newsletter Form Notification -->
-                                        <label for="s-email" class="form-notification"></label>
+                                            <a target="_blank" href="https://wa.me/918849545742" class="txt-400"><i class="fa fa-whatsapp p-1 mb-3"></i>8849545742</a>
+                                        </div>
+                                        <div>
 
-                                    </form>
+                                            <a target="_blank" href="mailto:31120.ishan@gmail.com" class="txt-400"><i class="far fa-envelope-open p-1 mb-3"></i>31120.ishan@gmail.com</a>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                    <!-- Newsletter Form Notification -->
 
                                 </div>
                             </div>
 
+                            <div class="col-lg-6 col-xl-6">
+                                <div class="footer-box mb-40">
+                                    <div style="width: 100%">
 
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9172698294437!2d72.98191161497861!3d23.607299784660174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7740ed7d01c13d7!2zMjPCsDM2JzI2LjMiTiA3MsKwNTknMDIuOCJF!5e0!3m2!1sen!2sin!4v1637430113710!5m2!1sen!2sin" width="100%" height="270" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                         <!-- END FOOTER CONTENT -->
 
@@ -273,22 +279,23 @@
 
 
                                 <!-- FOOTER LOGO -->
-                                <div class="col-md-4 col-lg-3">
+                                <div class="col-md-12  col-lg-12 col-sm-12 text-center mb-2 mt-4">
                                     <!-- Footer Logo -->
                                     <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 420 x 100 pixels) -->
-                                    <img src="images/logo-black.png" width="210" height="50" alt="footer-logo">
+                                    <%--<img src="images/logo-black.png" width="210" height="50" alt="footer-logo">--%>
+                                    <img src="images/logos/logo.png" style="object-fit: contain; transform: scale(1.9)" width="180" height="45" alt="logo" /></a>
+
+
                                 </div>
 
 
                                 <!-- FOOTER SOCIALS LINKS -->
-                                <div class="col-md-8 col-lg-9 text-right">
-                                    <p class="footer-copyright">&copy; Copyright <span>ImmiEx 2019</span>. All Rights Reserved</p>
+                                <%--<div class="col-md-8 col-lg-9 text-center">--%>
+                                <%--<p class="footer-copyright">&copy; Copyright <span>ImmiEx 2019</span>. All Rights Reserved</p>
                                     <p class="p-sm"><a href="#">Privacy Policy</a></p>
                                     <p class="p-sm"><a href="#">Terms & Conditions</a></p>
-                                    <p class="p-sm"><a href="#">Cookies</a></p>
-                                </div>
-
-
+                                    <p class="p-sm"><a href="#">Cookies</a></p>--%>
+                                <%--</div>--%>
                             </div>
                         </div>
                         <!-- END BOTTOM FOOTER -->

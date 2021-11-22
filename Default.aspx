@@ -1,6 +1,48 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/immigration1.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <style>
+        .my-valid {
+            width: 100% !important;
+            text-align: left !important;
+            /*   display: flex !important;
+            justify-content: flex-start !important;*/
+        }
+        .image-1 {
+            background: url("/images/logos/flag-1.jpg");
+            filter: grayscale(100%);
+
+        }
+
+        .txtbox {
+            margin-bottom: 5px;
+            border-bottom: 1px solid gray !important;
+        }
+
+        .wrap {
+            display: flex !important;
+            justify-content: flex-start;
+            /*align-items:center;*/
+        }
+
+        span.my-valid {
+            /*display:block !important;*/
+            text-align: left;
+            /*display:flex !important;*/
+
+            justify-content: flex-start;
+            /*align-items:center;*/
+        }
+
+        #request-form {
+            padding: 30px 25px 15px;
+            margin: 0 20px 0 50px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            background: white;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
@@ -30,17 +72,18 @@
                                     <div class="caption-txt white-color">
 
                                         <!-- Title -->
-                                        <h5 class="h5-xl">Welcome to ImmiEx Agency</h5>
-                                        <h2>We make the visa process faster</h2>
+                                        <h5 class="h5-xl">Welcome to Ishan Immigration</h5>
+                                        <%--<h2>We make the visa process faster</h2>--%>
+                                        <h2>Study Abroad Consultants In Himatnagar </h2>
 
                                         <!-- Text -->
                                         <p class="p-md">
-                                            Feugiat primis ligula risus auctor egestas augue mauri viverra tortor in 
-												   iaculis placerat eugiat mauris ipsum in viverra tortor and gravida purus lorem in tortor
+                                            ISHAN IMMIGRATION Is a Education Consultant in Himatnagar(Gujarat) India.
+                                            We Have Succesfully been Offering Education Consultancy Services for Uk & Canada.
                                         </p>
 
                                         <!-- Button -->
-                                        <a href="#" class="btn btn-md btn-primary tra-white-hover btn-arrow">
+                                        <a href="#countries-3" class="btn btn-md btn-primary tra-white-hover btn-arrow">
                                             <span>Discover More <i class="fas fa-arrow-right"></i></span>
                                         </a>
 
@@ -81,7 +124,7 @@
                                         </p>
 
                                         <!-- Button -->
-                                        <a href="#" class="btn btn-md btn-primary tra-white-hover btn-arrow">
+                                        <a href="Details.aspx" class="btn btn-md btn-primary tra-white-hover btn-arrow">
                                             <span>Book Consultation Now <i class="fas fa-arrow-right"></i></span>
                                         </a>
 
@@ -122,7 +165,7 @@
                                         </p>
 
                                         <!-- Button -->
-                                        <a href="#" class="btn btn-md btn-primary tra-white-hover btn-arrow">
+                                        <a href="#services-4" class="btn btn-md btn-primary tra-white-hover btn-arrow">
                                             <span>What We Do <i class="fas fa-arrow-right"></i></span>
                                         </a>
 
@@ -154,28 +197,116 @@
 
     </section>
     <!-- END HERO-1 -->
+
+
+    <!-- ABOUT-5
+			============================================= -->
+    <section id="about-10" class=" about-section division">
+        <div class="container">
+
+            <div style="text-align: center;">
+                <h3 class="h3-lg text-center mb-5" style="margin-top: 30px;">Best Student Visa Consultant in Himatnagar</h3>
+            </div>
+
+
+            <div class="row">
+
+
+                <!-- ABOUT TEXT	-->
+                <div class="col-lg-5">
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            <div class="about-5-txt mb-40">
+
+                                <!-- Title -->
+                                <h5 class="h5-lg" style="margin-top: 20px">Ishan Immigration International Study Abroad Consultants in Himatnagar</h5>
+
+                                <!-- List -->
+                                <ul class="abox-list">
+                                    <li>Ishan International is a Leading Overseas Education Consultant in Himatnagar, Gujarat, India. Enjoying association with a broad chain of colleges and universities in abroad. We have successfully been offering overseas education consultancy services for UK and Canada
+With a proven track record of successful UK Student Visa, today we have become the top UK Student Visa Consultant in Gujarat, India. So, through our experience and deep knowledge, we can assure you the 100% UK Student Visa success assurance.
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- END ABOUT TEXT	-->
+
+
+                <!-- ABOUT IMAGE -->
+                <div class="col-lg-7">
+                    <div class="about-5-img text-center mb-40">
+                        <img class="img-fluid" src="images/logos/abroad.jpg" alt="about-image" />
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+
+
+            <hr />
+
+            <h1 style="text-align: center">Samples Available to view, understand and download,
+            </h1>
+
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="about-5-img text-center mb-40">
+                        <img class="img-fluid" src="images/logos/sop.png" alt="about-image" />
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="col-sm-12" style="height: 100%; display: flex; justify-content: flex-start; align-items: center;">
+
+                        <ul>
+                            <li><a style="font-weight: 400; font-size: 1.3rem" href="Moi.aspx">-MOI Samples</a></li>
+                            <li><a style="font-weight: 400; font-size: 1.3rem" href="Lor.aspx">-LOR Samples</a></li>
+                            <li><a style="font-weight: 400; font-size: 1.3rem" href="Sop.aspx">-SOP Samples</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- End container -->
+
+    </section>
+
+
+
+    <!-- END ABOUT-5 -->
+
     <!-- SERVICES-4
 			============================================= -->
     <section id="services-4" class="wide-70 services-section division">
         <div class="container">
-            <div class="row">
 
+            <h1 style="text-align: center; margin-bottom: 25px">What We Can Do For You
+
+            </h1>
+            <div class="row">
 
                 <!-- SERVICE BOX #1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="sbox-4 icon-sm">
-                        <a href="visa-details.html">
 
-                            <!-- Icon -->
-                            <div class="sbox-4-icon grey-color"><span class="flaticon-431-bank"></span></div>
+                        <!-- Icon -->
+                        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                            <div class="sbox-4-icon grey-color mb-20"><span class="flaticon-431-bank"></span></div>
 
                             <!-- Text -->
                             <div class="sbox-4-txt">
-                                <h5 class="h5-md">Education Visa</h5>
-                                <p>Porta semper lacus cursus a feugiat primis an ultrice dolor undo congue placerat</p>
+                                <h5 class="h5-md">Career Counselling & Course Selection
+                                </h5>
+                                <p>
+                                    Our Career Counselling Experts can help you make the perfect career plan depending on your area of interest.
+                                </p>
                             </div>
+                        </div>
 
-                        </a>
                     </div>
                 </div>
 
@@ -183,18 +314,23 @@
                 <!-- SERVICE BOX #2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="sbox-4 icon-sm">
-                        <a href="visa-details.html">
-
+                        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
                             <!-- Icon -->
-                            <div class="sbox-4-icon grey-color"><span class="flaticon-023-wallet"></span></div>
+                            <div class="sbox-4-icon grey-color mb-20"><span class="flaticon-023-wallet"></span></div>
 
                             <!-- Text -->
                             <div class="sbox-4-txt">
-                                <h5 class="h5-md">Business Immigration</h5>
-                                <p>Porta semper lacus cursus a feugiat primis an ultrice dolor undo congue placerat</p>
-                            </div>
+                                <h5 class="h5-md">Student Visa
 
-                        </a>
+                                </h5>
+                                <p>
+                                    We can help you to get your student visa, you just need to provide us the necessary documents and rest is our responsibility!
+
+
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -202,23 +338,26 @@
                 <!-- SERVICE BOX #3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="sbox-4 icon-sm">
-                        <a href="visa-details.html">
-
+                        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
                             <!-- Icon -->
-                            <div class="sbox-4-icon grey-color"><span class="flaticon-004-wrench"></span></div>
+                            <div class="sbox-4-icon grey-color mb-20"><span class="flaticon-004-wrench"></span></div>
 
                             <!-- Text -->
                             <div class="sbox-4-txt">
-                                <h5 class="h5-md">Skilled Immigration</h5>
-                                <p>Porta semper lacus cursus a feugiat primis an ultrice dolor undo congue placerat</p>
-                            </div>
+                                <h5 class="h5-md text-center">Pre / Post-departure</h5>
+                                <p>
+                                    Proper coaching in which you will get trained for various examinations for taking admission in the top universities of different countries!
 
-                        </a>
+
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
 
-                <!-- SERVICE BOX #4 -->
+                <%--                <!-- SERVICE BOX #4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="sbox-4 icon-sm">
                         <a href="visa-details.html">
@@ -272,9 +411,7 @@
 
                         </a>
                     </div>
-                </div>
-
-
+                </div>--%>
             </div>
             <!-- End row -->
         </div>
@@ -283,502 +420,29 @@
     <!-- END SERVICES-4 -->
 
 
-
-
-    <!-- ABOUT-2
-			============================================= -->
-    <section id="about-2" class="bg-lightgrey wide-60 about-section division">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-
-
-                <!-- ABOUT IMAGE -->
-                <div class="col-md-6">
-                    <div class="about-img text-center mb-40">
-
-                        <!-- Image -->
-                        <img class="img-fluid" src="images/image-03.png" alt="about-image" />
-
-                        <!-- Video Link -->
-                        <div class="video-square">
-                            <div class="video-link icon-lg primary-color">
-                                <a class="video-popup2" href="https://www.youtube.com/watch?v=7e90gBu4pas">
-                                    <span class="flaticon-159-play-button"></span>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- ABOUT TEXT	-->
-                <div class="col-md-6">
-                    <div class="about-2-txt pc-20 mb-40">
-
-
-                        <!-- Section ID -->
-                        <span class="section-id id-color">About Agency</span>
-
-                        <!-- Title -->
-                        <h3 class="h3-lg">Consultations for prospective immigrants</h3>
-
-                        <!-- INFO BOX #1 -->
-                        <div class="box-list">
-                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                            <p>
-                                An magnis nulla dolor sapien augue erat iaculis purus tempor magna ipsum vitae purus
-									   primis pretium ligula rutrum luctus blandit porta justo integer. Feugiat a primis ultrice 
-									   ligula 
-                            </p>
-                        </div>
-
-                        <!-- INFO BOX #2 -->
-                        <div class="box-list">
-                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                            <p>
-                                Nemo ipsam egestas volute turpis dolores and aliquam quaerat sodales sapien undo pretium
-									   purus ligula tempus ipsum undo auctor a mauris lectus ipsum blandit
-                            </p>
-                        </div>
-
-                        <!-- INFO BOX #3 -->
-                        <div class="box-list">
-                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                            <p>
-                                Quaerat sodales sapien undo euismod purus and blandit laoreet augue an augue egestas. Augue
-									   iaculis purus and augue tempor congue magna egestas magna ligula
-                            </p>
-                        </div>
-
-
-                    </div>
-                </div>
-                <!-- END ABOUT TEXT	-->
-
-
-            </div>
-            <!-- End row -->
-        </div>
-        <!-- End container -->
-    </section>
-    <!-- END ABOUT-2 -->
-
-
-
-
-    <!-- ABOUT-5
-			============================================= -->
-    <section id="about-5" class="wide-60 about-section division">
-        <div class="container">
-
-
-            <!-- SECTION TITLE -->
-            <div class="row">
-                <div class="col-md-12 section-title">
-
-                    <!-- Title -->
-                    <h3 class="h3-lg">Find a consultant by:</h3>
-
-                    <!-- Text -->
-                    <p class="p-md">
-                        Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, 
-							   felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa
-                    </p>
-
-                </div>
-            </div>
-
-
-            <div class="row">
-
-
-                <!-- ABOUT TEXT	-->
-                <div class="col-lg-5">
-                    <div class="row">
-
-                        <div class="col-sm-6">
-                            <div class="about-5-txt mb-40">
-
-                                <!-- Title -->
-                                <h5 class="h5-lg">Country:</h5>
-
-                                <!-- List -->
-                                <ul class="abox-list">
-                                    <li><a href="country-details.html">Canada</a></li>
-                                    <li><a href="country-details.html">Australia</a></li>
-                                    <li><a href="country-details.html">United Kingdom</a></li>
-                                    <li><a href="country-details.html">USA</a></li>
-                                    <li><a href="country-details.html">New Zealand</a></li>
-                                    <li><a href="country-details.html">South Korea</a></li>
-                                    <li class="more-info-link darkblue-color">
-                                        <a href="country-list.html">View All <i class="fas fa-caret-right"></i></a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="about-5-txt mb-40">
-
-                                <!-- Title -->
-                                <h5 class="h5-lg">Pratice Area:</h5>
-
-                                <!-- List -->
-                                <ul class="abox-list">
-                                    <li><a href="visa-details.html">Student Visa</a></li>
-                                    <li><a href="visa-details.html">Skilled Work Visa</a></li>
-                                    <li><a href="visa-details.html">Business visa</a></li>
-                                    <li><a href="visa-details.html">Spouse/Family Visa</a></li>
-                                    <li><a href="visa-details.html">Tourist & Visitor Visa</a></li>
-                                    <li><a href="visa-details.html">Immigration Consult</a></li>
-                                    <li class="more-info-link darkblue-color">
-                                        <a href="visa-list-1.html">View All <i class="fas fa-caret-right"></i></a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- END ABOUT TEXT	-->
-
-
-                <!-- ABOUT IMAGE -->
-                <div class="col-lg-7">
-                    <div class="about-5-img text-center mb-40">
-                        <img class="img-fluid" src="images/world-map.png" alt="about-image" />
-                    </div>
-                </div>
-
-
-            </div>
-            <!-- End row -->
-        </div>
-        <!-- End container -->
-    </section>
-    <!-- END ABOUT-5 -->
-
-
-
-
     <!-- STATISTIC-3
 			============================================= -->
-    <div id="statistic-3" class="bg-image bg-scroll wide-60 statistic-section division">
+    <div id="statistic-9"  class="image-1 bg-scroll wide-60 statistic-section division"  >
         <div class="container white-color">
-
-
             <!-- STATISTIC 3 TITLE -->
             <div class="row">
                 <div class="col-md-12">
                     <div class="statistic-3-title primary-border">
-                        <h3 class="h3-lg">Thousands Of People Choose Our Services</h3>
+                        <p style="font-size:1.5rem;font-weight:400">
+                            All the world's a stage, and all the men and women merely players: they have their exits and their entrances; and one man in his time plays many parts, his acts being seven ages.
+                        </p>
+                        <h3 class="h3-lg">-William Shakespeare
+                        </h3>
                     </div>
                 </div>
             </div>
 
 
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="row">
-
-
-                        <!-- STATISTIC BLOCK #1 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="statistic-block icon-sm">
-
-                                <!-- Text -->
-                                <h5 class="yellow-color"><span class="count-element">820</span>+</h5>
-                                <p>Happy Students</p>
-
-                            </div>
-                        </div>
-
-                        <!-- STATISTIC BLOCK #2 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="statistic-block icon-sm">
-
-                                <!-- Text -->
-                                <h5 class="yellow-color"><span class="count-element">148</span></h5>
-                                <p>University Partners</p>
-
-                            </div>
-                        </div>
-
-                        <!-- STATISTIC BLOCK #3 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="statistic-block icon-sm">
-
-                                <!-- Text -->
-                                <h5 class="yellow-color"><span class="count-element">80</span>+</h5>
-                                <p>Countries</p>
-
-                            </div>
-                        </div>
-
-                        <!-- STATISTIC BLOCK #4 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="statistic-block icon-sm">
-
-                                <!-- Text -->
-                                <h5 class="yellow-color"><span class="count-element">2487</span></h5>
-                                <p>Immigrations</p>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <!-- End row -->
         </div>
         <!-- End container -->
     </div>
     <!-- END STATISTIC-3 -->
 
-
-
-
-    <!-- TABS-2
-			============================================= -->
-    <section id="tabs-2" class="wide-60 tabs-section division">
-        <div class="container">
-            <div class="row">
-
-
-                <!-- TABS NAVIGATION -->
-                <div class="col-md-12">
-                    <div class="tabs-nav clearfix">
-                        <ul class="tabs-2 primary-tabs">
-
-                            <!-- TAB-1 LINK -->
-                            <li class="tab-link displayed" data-tab="tab-11">
-                                <span>Goverment Approved</span>
-                            </li>
-
-                            <!-- TAB-2 LINK -->
-                            <li class="tab-link" data-tab="tab-12">
-                                <span>No Hidden Costs</span>
-                            </li>
-
-                            <!-- TAB-3 LINK -->
-                            <li class="tab-link" data-tab="tab-13">
-                                <span>Fast, Easy & Secure</span>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <!-- END TABS NAVIGATION -->
-
-
-                <!-- TABS CONTENT -->
-                <div class="col-md-12">
-                    <div class="tabs-content">
-
-
-                        <!-- TAB-1 CONTENT -->
-                        <div id="tab-11" class="tab-content displayed">
-                            <div class="row d-flex align-items-center">
-
-
-                                <!-- TAB-1 IMAGE -->
-                                <div class="col-md-6 mb-40">
-                                    <div class="tab-img text-center">
-                                        <img class="img-fluid" src="images/image-01.png" alt="tab-image" />
-                                    </div>
-                                </div>
-
-
-                                <!-- TAB-1 TEXT -->
-                                <div class="col-md-6">
-                                    <div class="txt-block pc-20 mb-40">
-
-                                        <!-- Section ID -->
-                                        <span class="section-id id-color">Getting a visa</span>
-
-                                        <!-- Title -->
-                                        <h3 class="h3-lg">We make the visa process faster</h3>
-
-                                        <!-- Text -->
-                                        <p>
-                                            Semper lacus cursus porta, feugiat primis ligula risus auctor and rhoncus in ultrice
-												   ligula purus ipsum primis in cubilia augue vitae laoreet augue in cubilia augue egestas 
-												   an ipsum turpis
-                                        </p>
-
-                                        <!-- Small Title -->
-                                        <h5 class="h5-md">Cubilia augue vitae laoreet</h5>
-
-                                        <!-- Text Box #1 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>
-                                                Fringilla risus nec, luctus mauris orci auctor purus euismod at pretium purus pretium
-												       ligula rutrum viverra tortor sapien sodales congue magna undo pretium purus pretium an 
-												       magnis nulla
-                                            </p>
-                                        </div>
-
-                                        <!-- Text Box #2 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>
-                                                Quaerat sodales sapien undo euismod risus auctor egestas augue mauri undo viverra tortor
-													   sapien sodales sapien and vitae donec dolor sapien augue erat iaculis euismod
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <!-- End row -->
-                        </div>
-                        <!-- END TAB-1 CONTENT -->
-
-
-                        <!-- TAB-2 CONTENT -->
-                        <div id="tab-12" class="tab-content">
-                            <div class="row d-flex align-items-center">
-
-
-                                <!-- TAB-2 IMAGE -->
-                                <div class="col-md-6">
-                                    <div class="tab-img text-center mb-40">
-                                        <img class="img-fluid" src="images/image-03.png" alt="tab-image" />
-                                    </div>
-                                </div>
-
-
-                                <!-- TAB-2 TEXT -->
-                                <div class="col-md-6">
-                                    <div class="txt-block pc-20 mb-40">
-
-                                        <!-- Section ID -->
-                                        <span class="section-id id-color">We love our clients</span>
-
-                                        <!-- Title -->
-                                        <h3 class="h3-lg">Thousands of people choose our services</h3>
-
-                                        <!-- Text -->
-                                        <p>
-                                            Semper lacus cursus porta, feugiat primis ligula risus auctor and rhoncus in ultrice
-												   ligula purus ipsum primis in cubilia augue vitae laoreet augue in cubilia augue egestas 
-												   an ipsum turpis magna nihil impedit ligula risus. Mauris donec ociis et magnis sapien etiam 
-                                        </p>
-
-                                        <!-- Text -->
-                                        <p>
-                                            An enim nullam tempor sapien gravida donec enim blandit ipsum at porta justo integer velna
-												   vitae auctor integer congue magna pretium purus pretium. An magnis nulla dolor sapien augue 
-												   erat iaculis
-                                        </p>
-
-                                        <!-- Button -->
-                                        <a href="#" class="btn btn-tra-grey primary-hover btn-arrow">
-                                            <span>Discover More <i class="fas fa-arrow-right"></i></span>
-                                        </a>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <!-- End row -->
-                        </div>
-                        <!-- END TAB-2 CONTENT -->
-
-
-                        <!-- TAB-3 CONTENT -->
-                        <div id="tab-13" class="tab-content">
-                            <div class="row d-flex align-items-center">
-
-
-                                <!-- TAB-3 IMAGE -->
-                                <div class="col-md-6">
-                                    <div class="tab-img text-center mb-40">
-                                        <img class="img-fluid" src="images/image-02.png" alt="tab-image" />
-                                    </div>
-                                </div>
-
-
-                                <!-- TAB-3 TEXT -->
-                                <div class="col-md-6">
-                                    <div class="txt-block pc-20 mb-40">
-
-                                        <!-- Section ID -->
-                                        <span class="section-id id-color">Professional Advisors</span>
-
-                                        <!-- Title -->
-                                        <h3 class="h3-lg">Get guarantee success with our advisors</h3>
-
-                                        <!-- Text Box #1 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>
-                                                Semper lacus cursus porta, feugiat primis ligula risus auctor and rhoncus in ultrice
-													   ligula purus ipsum primis in cubilia augue vitae laoreet augue in cubilia augue egestas 
-													   an ipsum turpis
-                                            </p>
-                                        </div>
-
-                                        <!-- Text Box #2 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>
-                                                Fringilla risus nec, luctus mauris orci auctor purus euismod at pretium purus pretium
-												       ligula rutrum viverra tortor sapien sodales congue magna undo pretium purus pretium an 
-												       magnis nulla
-                                            </p>
-                                        </div>
-
-                                        <!-- Text Box #3 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>
-                                                Quaerat sodales sapien undo euismod risus auctor egestas augue mauri undo viverra tortor
-													   sapien sodales sapien and vitae donec dolor sapien augue erat iaculis euismod
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <!-- End row -->
-                        </div>
-                        <!-- END TAB-3 CONTENT -->
-
-
-                    </div>
-                </div>
-                <!-- END TABS CONTENT -->
-
-
-            </div>
-            <!-- End row -->
-        </div>
-        <!-- End container -->
-    </section>
-    <!-- END TABS-2 -->
-
-
-
-
-    <!-- HORIZONTAL GREY LINE -->
-    <div class="section-divider">
-        <div class="container">
-            <div class="row">
-                <div class="grey-border"></div>
-            </div>
-        </div>
-    </div>
 
 
 
@@ -790,19 +454,21 @@
 
 
             <!-- SECTION TITLE -->
-            <div class="row">
-                <div class="col-md-12 section-title center">
+            <div style="width: 100%; text-align: center">
 
-                    <!-- Title -->
-                    <h2 class="h2-xs">Immigration Opportunities</h2>
+                <!-- Title -->
+                <p>
+                    What We Can Do For You
+                </p>
+                <h2 class="h2-xs mb-5">We Can Help You to Go Abroad
+                </h2>
 
-                    <!-- Text -->
-                    <p class="p-md">
-                        Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, 
+
+                <!-- Text -->
+                <%--<p class="p-md">
+                    Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, 
 							   felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa
-                    </p>
-
-                </div>
+                </p>--%>
             </div>
             <!-- END SECTION TITLE -->
 
@@ -813,7 +479,7 @@
                 <!-- COUNTRY BOX -->
                 <div class="col-sm-6 col-lg-6">
                     <div class="cbox-3">
-                        <a href="country-details.html">
+                        <a href="whycanada.aspx">
 
                             <!-- Image -->
                             <div class="hover-overlay">
@@ -834,7 +500,7 @@
 
 
                 <!-- COUNTRY BOX -->
-             <%--   <div class="col-sm-6 col-lg-3">
+                <%--   <div class="col-sm-6 col-lg-3">
                     <div class="cbox-3">
                         <a href="country-details.html">
 
@@ -882,7 +548,7 @@
                 <!-- COUNTRY BOX -->
                 <div class="col-sm-6 col-lg-6">
                     <div class="cbox-3">
-                        <a href="country-details.html">
+                        <a href="whyk.aspx">
 
                             <!-- Image -->
                             <div class="hover-overlay">
@@ -903,7 +569,7 @@
 
 
                 <!-- COUNTRY BOX -->
-               <%-- <div class="col-sm-6 col-lg-3">
+                <%-- <div class="col-sm-6 col-lg-3">
                     <div class="cbox-3">
                         <a href="country-details.html">
 
@@ -926,7 +592,7 @@
 
 
                 <!-- COUNTRY BOX -->
-           <%--     <div class="col-sm-6 col-lg-3">
+                <%--     <div class="col-sm-6 col-lg-3">
                     <div class="cbox-3">
                         <a href="country-details.html">
 
@@ -972,66 +638,161 @@
 
 
             </div>--%>
-            <!-- End row -->
-        </div>
-        <!-- End container -->
+                <!-- End row -->
+            </div>
+            <!-- End container -->
     </section>
     <!-- END COUNTRIES-3 -->
 
 
 
 
-    <!-- ABOUT-6
+    <!-- STATISTIC-3
 			============================================= -->
-    <section id="about-6" class="bg-scroll pt-100 about-section division">
+    <div id="statistic-3" class="bg-image bg-scroll wide-60 statistic-section division">
         <div class="container white-color">
-            <div class="row d-flex align-items-center">
+
+
+            <!-- STATISTIC 3 TITLE -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="statistic-3-title primary-border">
+                        <h3 class="h3-lg">Total Visitors</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="row">
+
+
+                        <!-- STATISTIC BLOCK #1 -->
+                        <div class="col-sm-12 col-md-12 text-center">
+                            <div class="statistic-block icon-sm">
+
+                                <!-- Text -->
+                                <h5 class="yellow-color"><span class="count-element">820</span>+</h5>
+                                <p>Happy Students</p>
+
+                            </div>
+                        </div>
+
+                        <!-- STATISTIC BLOCK #2 -->
+                        <%--      <div class="col-sm-6 col-md-3">
+                            <div class="statistic-block icon-sm">
+
+                                <!-- Text -->
+                                <h5 class="yellow-color"><span class="count-element">148</span></h5>
+                                <p>University Partners</p>
+
+                            </div>
+                        </div>
+
+                        <!-- STATISTIC BLOCK #3 -->
+                        <div class="col-sm-6 col-md-3">
+                            <div class="statistic-block icon-sm">
+
+                                <!-- Text -->
+                                <h5 class="yellow-color"><span class="count-element">80</span>+</h5>
+                                <p>Countries</p>
+
+                            </div>
+                        </div>
+
+                        <!-- STATISTIC BLOCK #4 -->
+                        <div class="col-sm-6 col-md-3">
+                            <div class="statistic-block icon-sm">
+
+                                <!-- Text -->
+                                <h5 class="yellow-color"><span class="count-element">2487</span></h5>
+                                <p>Immigrations</p>
+
+                            </div>
+                        </div>--%>
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </div>
+    <!-- END STATISTIC-3 -->
+
+
+
+    <!-- ABOUT-5
+			============================================= -->
+    <section id="about-5" class=" about-section division m-5">
+        <div class="container">
+
+            <div style="text-align: center;">
+                <h3 class="h3-lg text-center mb-5">Countries</h3>
+            </div>
+
+
+            <div class="row">
+
+
+                <!-- ABOUT TEXT	-->
+                <div class="col-lg-5">
+                    <div class="row">
+
+                        <div class="col-sm-12 text-center">
+                            <div class="about-5-txt mb-40 mt-5">
+
+                                <!-- Title -->
+                                <h5 class="h5-lg">Country:</h5>
+
+                                <!-- List -->
+                                <ul class="abox-list">
+                                    <li><a href="country-details.html">Canada</a></li>
+                                    <li><a href="country-details.html">Australia</a></li>
+                                    <li><a href="country-details.html">United Kingdom</a></li>
+                                    <li><a href="country-details.html">USA</a></li>
+                                    <li><a href="country-details.html">New Zealand</a></li>
+                                    <li><a href="country-details.html">South Korea</a></li>
+                                    <li class="more-info-link darkblue-color">
+                                        <a href="country-list.html">View All <i class="fas fa-caret-right"></i></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <%--  <div class="col-sm-6">
+                            <div class="about-5-txt mb-40">
+
+                                <!-- Title -->
+                                <h5 class="h5-lg">Pratice Area:</h5>
+
+                                <!-- List -->
+                                <ul class="abox-list">
+                                    <li><a href="visa-details.html">Student Visa</a></li>
+                                    <li><a href="visa-details.html">Skilled Work Visa</a></li>
+                                    <li><a href="visa-details.html">Business visa</a></li>
+                                    <li><a href="visa-details.html">Spouse/Family Visa</a></li>
+                                    <li><a href="visa-details.html">Tourist & Visitor Visa</a></li>
+                                    <li><a href="visa-details.html">Immigration Consult</a></li>
+                                    <li class="more-info-link darkblue-color">
+                                        <a href="visa-list-1.html">View All <i class="fas fa-caret-right"></i></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>--%>
+                    </div>
+                </div>
+                <!-- END ABOUT TEXT	-->
 
 
                 <!-- ABOUT IMAGE -->
-                <div class="col-lg-6">
-                    <div class="about-6-img text-center">
-                        <img class="img-fluid" src="images/image-08.png" alt="about-image" />
+                <div class="col-lg-7">
+                    <div class="about-5-img text-center mb-40">
+                        <img class="img-fluid" style="border-radius: 10px; filter: contrast(200%);" src="images/logos/map.jpg" alt="about-image" />
                     </div>
                 </div>
-
-
-                <!-- ABOUT TEXT -->
-                <div class="col-lg-6">
-                    <div class="about-6-txt pc-20">
-
-                        <!-- Section ID -->
-                        <span class="section-id id-color">Overseas Education</span>
-
-                        <!-- Title -->
-                        <h2 class="h2-xs">Looking for Quality Abroad Education?</h2>
-
-                        <!-- Text -->
-                        <p class="p-md">
-                            Fringilla risus luctus mauris auctor purus euismod pretium purus at pretium
-								   ligula rutrum viverra tortor sapien sodales quaerat sodales sapien blandit dolores and aliquam
-                        </p>
-
-                        <!-- Small Title -->
-                        <h5 class="h5-lg">350+ Universities in 17 Countries:</h5>
-
-                        <!-- Flags list -->
-                        <ul class="flags-list">
-                            <li><a href="country-details.html">
-                                <img src="images/flags/canada.png" alt="flag" /><span>Canada</span></a></li>
-                            <li><a href="country-details.html">
-                                <img src="images/flags/australia.png" alt="flag" /><span>Australia</span></a></li>
-                            <li><a href="country-details.html">
-                                <img src="images/flags/usa.png" alt="flag" /><span>USA</span></a></li>
-                            <li><a href="country-details.html">
-                                <img src="images/flags/united-kingdom.png" alt="flag" /><span>UK</span></a></li>
-                            <li><a href="country-details.html">
-                                <img src="images/flags/eu.png" alt="flag" /><span>Europe</span></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <!-- END ABOUT TEXT -->
 
 
             </div>
@@ -1039,549 +800,31 @@
         </div>
         <!-- End container -->
     </section>
-    <!-- END ABOUT-6 -->
+    <!-- END ABOUT-5 -->
 
 
 
 
-    <!-- BRANDS-3
-			============================================= -->
-    <section id="brands-3" class="wide-80 brands-section division">
+
+
+
+
+    <!-- HORIZONTAL GREY LINE -->
+    <div class="section-divider">
         <div class="container">
-
-
-            <!-- SECTION TITLE -->
             <div class="row">
-                <div class="col-md-12 section-title center">
-
-                    <!-- Title -->
-                    <h2 class="h2-xs">Partner Institutes & Universities</h2>
-
-                    <!-- Text -->
-                    <p class="p-md">
-                        Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, 
-							   felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa
-                    </p>
-
-                </div>
+                <div class="grey-border"></div>
             </div>
-            <!-- END SECTION TITLE -->
-
-
-            <!-- BRANDS FILTERING BUTTONS -->
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="brands-filter mb-50">
-                        <button data-filter="*" class="is-checked">All Countries</button>
-                        <button data-filter=".canada">Canada</button>
-                        <button data-filter=".australia">Australia</button>
-                        <button data-filter=".usa">USA</button>
-                        <button data-filter=".uk">United Kingdom</button>
-                        <button data-filter=".new-zealand">New Zealand</button>
-                        <button data-filter=".china">China</button>
-                        <button class="last-button" data-filter=".south-korea">South Korea</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- BRANDS HOLDER -->
-            <div class="row">
-                <div class="col-md-12 brands-list">
-                    <div class="masonry-wrap grid-loaded hover-primary">
-
-                        <!-- BRAND #1 -->
-                        <div class="brand-3 canada">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-1.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #2 -->
-                        <div class="brand-3 canada">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-2.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #3 -->
-                        <div class="brand-3 canada">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-3.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #4 -->
-                        <div class="brand-3 canada">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-4.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #5 -->
-                        <div class="brand-3 canada">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-5.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #6 -->
-                        <div class="brand-3 australia">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-6.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #7 -->
-                        <div class="brand-3 australia">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-7.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #8 -->
-                        <div class="brand-3 australia">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-2.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #9 -->
-                        <div class="brand-3 usa">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-1.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #10 -->
-                        <div class="brand-3 usa">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-2.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #11 -->
-                        <div class="brand-3 usa">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-3.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #12 -->
-                        <div class="brand-3 uk">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-4.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #13 -->
-                        <div class="brand-3 uk">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-5.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #14 -->
-                        <div class="brand-3 uk">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-6.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #15 -->
-                        <div class="brand-3 uk">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-7.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #16 -->
-                        <div class="brand-3 uk">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-2.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #17 -->
-                        <div class="brand-3 new-zealand">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-1.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #18 -->
-                        <div class="brand-3 new-zealand">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-2.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #19 -->
-                        <div class="brand-3 new-zealand">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-3.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #20 -->
-                        <div class="brand-3 china">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-4.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #21 -->
-                        <div class="brand-3 china">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-5.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #22 -->
-                        <div class="brand-3 china">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-6.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #23 -->
-                        <div class="brand-3 south-korea">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-7.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #24 -->
-                        <div class="brand-3 south-korea">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-2.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                        <!-- BRAND #25 -->
-                        <div class="brand-3 south-korea">
-                            <div class="brand-logo">
-                                <a href="#">
-                                    <img class="img-fluid" src="images/brand-7.png" alt="brand-logo" /></a>
-                                <p class="p-sm">Enter University Name Here</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- END BRANDS HOLDER -->
-
-
         </div>
-        <!-- End container -->
-    </section>
-    <!-- END BRANDS-3 -->
+    </div>
 
 
 
 
-    <!-- TESTIMONIALS-1
-			============================================= -->
-    <section id="reviews-1" class="bg-tra-city bg-lightgrey wide-100 reviews-section division">
-        <div class="container">
 
 
-            <!-- SECTION TITLE -->
-            <div class="row">
-                <div class="col-md-12 section-title center">
 
-                    <!-- Title -->
-                    <h2 class="h2-xs">What Our Clients Say</h2>
 
-                    <!-- Text -->
-                    <p class="p-md">
-                        Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, 
-							   felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa
-                    </p>
-
-                </div>
-            </div>
-            <!-- END SECTION TITLE -->
-
-
-            <!-- TESTIMONIALS CONTENT -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme reviews-holder">
-
-
-                        <!-- TESTIMONIAL #1 -->
-                        <div class="review-1">
-
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
-
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-1.jpg" alt="testimonial-avatar">
-                                </div>
-
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-sm">Robert</h5>
-                                    <span>(UK Business Visa)</span>
-                                </div>
-
-                            </div>
-                            <!-- End Testimonial Author -->
-
-                            <!-- Testimonial Text -->
-                            <p>
-                                Sagittis congue etiam sapien at velna accumsan suscipit egestas at lobortis magna, a 
-									   porttitor sodales an aenean mauris tempor aenean cubilia blandit porta justo integer  
-									   velna vitae auctor integer a congue magna sapien gravida donec ultrice ligula risus					   
-                            </p>
-
-                        </div>
-
-
-                        <!-- TESTIMONIAL #2 -->
-                        <div class="review-1">
-
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
-
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-2.jpg" alt="testimonial-avatar">
-                                </div>
-
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-sm">Evelyn W.</h5>
-                                    <span>(Canada Studients Visa)</span>
-                                </div>
-
-                            </div>
-                            <!-- End Testimonial Author -->
-
-                            <!-- Testimonial Text -->
-                            <p>
-                                Sapien sem accumsan vitae at purus diam integer congue magna sodales. Magna vitae and aenean 
-									   mauris tempor augue in cubilia laoreet magna suscipit magna ipsum vitae purus ipsum primis 
-									   cubilia laoreet and augue ultrice ligula egestas magna suscipit lectus gestas at magna viverra 
-									   dolor neque gravida				   
-                            </p>
-
-                        </div>
-
-
-                        <!-- TESTIMONIAL #3 -->
-                        <div class="review-1">
-
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
-
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-3.jpg" alt="testimonial-avatar">
-                                </div>
-
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-sm">Leslie Serpas</h5>
-                                    <span>(Singapore PR Visa)</span>
-                                </div>
-
-                            </div>
-                            <!-- End Testimonial Author -->
-
-                            <!-- Testimonial Text -->
-                            <p>
-                                Etiam sapien gravida and donec sagittis congue. Augue cubilia laoreet at magna suscipit egestas 
-									   magna an ipsum vitae and purus ipsum primis undo cubilia laoreet augue ultrice ligula and egestas 
-									   suscipit  magna lectus gestas magna as viverra neque est gravida									   
-                            </p>
-
-                        </div>
-
-
-                        <!-- TESTIMONIAL #4 -->
-                        <div class="review-1">
-
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
-
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-4.jpg" alt="testimonial-avatar">
-                                </div>
-
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-sm">Dan Hodges</h5>
-                                    <span>(USA Studients Visa)</span>
-                                </div>
-
-                            </div>
-                            <!-- End Testimonial Author -->
-
-                            <!-- Testimonial Text -->
-                            <p>
-                                An augue in cubilia laoreet undo magna suscipit egestas magna ipsum egestas vitae purus ipsum
-									   primis cubilia laoreet augue ultrice ligula egestas and magna suscipit lectus gestas magna a 
-									   viverra dolor neque est gravida								   
-                            </p>
-
-                        </div>
-
-
-                        <!-- TESTIMONIAL #5 -->
-                        <div class="review-1">
-
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
-
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-5.jpg" alt="testimonial-avatar">
-                                </div>
-
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-sm">Amelie Peterson</h5>
-                                    <span>(France Working Visa)</span>
-                                </div>
-
-                            </div>
-                            <!-- End Testimonial Author -->
-
-                            <!-- Testimonial Text -->
-                            <p>
-                                An orci nullam tempor sapien, gravida donec enim ipsum a porta. An augue in cubilia laoreet 
-									   magna suscipit egestas magna ipsum vitae purus ipsum primis in cubilia laoreet augue ultrice 
-									   at ligula egestas magna suscipit lectus gestas magna viverra dolor neque est gravida justo 
-									   integer and velna auctor					   
-                            </p>
-
-                        </div>
-
-
-                        <!-- TESTIMONIAL #6 -->
-                        <div class="review-1">
-
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
-
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-6.jpg" alt="testimonial-avatar">
-                                </div>
-
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-sm">Scott Boxer</h5>
-                                    <span>(Germany Travel Visa)</span>
-                                </div>
-
-                            </div>
-                            <!-- End Testimonial Author -->
-
-                            <!-- Testimonial Text -->
-                            <p>
-                                An augue cubilia laoreet magna suscipit egestas magna ipsum vitae purus undo ipsum primis 
-									   in cubilia laoreet augue ultrice ligula egestas magna at suscipit lectus gestas magna viverra 
-									   dolor neque est gravida. Mauris donec ociis magnis sapien etiam sapien sem sagittis		   
-                            </p>
-
-                        </div>
-
-
-                        <!-- TESTIMONIAL #7 -->
-                        <div class="review-1">
-
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
-
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-7.jpg" alt="testimonial-avatar">
-                                </div>
-
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-sm">Evelyn</h5>
-                                    <span>(Austrlia PR Visa)</span>
-                                </div>
-
-                            </div>
-                            <!-- End Testimonial Author -->
-
-                            <!-- Testimonial Text -->
-                            <p>
-                                At sagittis congue augue egestas undo magna ipsum vitae purus ipsum primis in cubilia
-									   laoreet augue ociis at nullam tempor sapien gravida porta integer at odio velna auctor. 
-									   An augue in cubilia laoreet magna suscipit egestas magna ipsum vitae purus ipsum primis 
-									   cubilia laoreet augue ultrice ligula egestas 	 
-                            </p>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <!-- END TESTIMONIALS CONTENT -->
-
-
-        </div>
-        <!-- End container -->
-    </section>
-    <!-- END TESTIMONIALS-1 -->
 
 
 
@@ -1606,15 +849,14 @@
                         <h2 class="h2-xs">Get Free & Quality Online Consultation</h2>
 
                         <!-- Samll Title -->
-                        <h5 class="h5-md">Euismod risus auctor egestas augue mauri viverra euismod tortor eugiat a mauris placerat</h5>
+                        <h5 class="h5-md">CONTACT FORM</h5>
 
-                        <!-- Text -->
+                        <%--<!-- Text -->
                         <p>
                             Fringilla risus nec, luctus mauris orci auctor purus euismod and pretium purus at pretium
 								   ligula rutrum viverra tortor sapien sodales and primis ligula risus auctor egestas augue 
 								   mauri viverra tortor in iaculis placerat eugiat mauris ipsum viverra tortor gravida 
-                        </p>
-
+                        </p>--%>
                     </div>
                 </div>
                 <!-- END REQUEST FORM TEXT -->
@@ -1624,63 +866,80 @@
                 <div class="col-md-6 col-xl-5 offset-xl-1">
                     <div id="request-form" class="text-center mb-40">
                         <form name="requestForm" class="row request-form bg-lightgrey">
-
                             <!-- Request Form Text -->
                             <div class="col-md-12">
-                                <h5 class="h5-lg">Request Free Consultation</h5>
+                                <h5 class="h5-lg" style="color: white">Request Free Consultation</h5>
                             </div>
 
                             <!-- Request Form Input -->
-                            <div id="input-name" class="col-md-12">
-                                <input type="text" name="name" class="form-control name" placeholder="Enter Your Name*" required>
+                            <div id="input-name" class="col-md-12 ">
+                                <asp:TextBox CssClass="txtbox" Style="width: 100%; border-radius: 5px; border: none; outline: none; padding: 5px;" ID="TextBox1" placeholder="Name" runat="server"></asp:TextBox>
+                                <div class="wrap">
+
+                                    <asp:RequiredFieldValidator ValidationGroup="valid-1" Display="Dynamic" CssClass="my-valid" ID="RequiredFieldValidator1" ControlToValidate="TextBox1" runat="server" ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator>
+                                </div>
                             </div>
 
                             <!-- Request Form Input -->
-                            <div id="input-email" class="col-md-12">
-                                <input type="text" name="email" class="form-control email" placeholder="Enter Your Email*" required>
+                            <div id="input-email" class="col-md-12 ">
+                                <asp:TextBox CssClass="txtbox" Style="width: 100%; border-radius: 5px; border: none; outline: none; padding: 5px;" placeholder="Email" ID="TextBox2" runat="server"></asp:TextBox>
+                                <div class="wrap">
+
+                                    <asp:RequiredFieldValidator ValidationGroup="valid-1" Display="Dynamic" CssClass="my-valid" ID="RequiredFieldValidator2" ControlToValidate="TextBox2" runat="server" ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ValidationGroup="valid-1" Display="Dynamic" CssClass="my-valid" ID="RegularExpressionValidator1" ControlToValidate="TextBox2" runat="server" ErrorMessage="*" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                                </div>
+
                             </div>
 
                             <!-- Request Form Input -->
-                            <div id="input-phone" class="col-md-12">
-                                <input type="tel" name="phone" class="form-control phone" placeholder="Enter Your Phone Number*" required>
+                            <div id="input-phone" class="col-md-12 ">
+                                <asp:TextBox CssClass="txtbox" ID="TextBox3" Style="width: 100%; border-radius: 5px; border: none; outline: none; padding: 5px;" placeholder="Phone no" MaxLength="10" runat="server"></asp:TextBox>
+                                <div class="wrap">
+
+                                    <asp:RequiredFieldValidator ValidationGroup="valid-1" Display="Dynamic" CssClass="my-valid" ID="RequiredFieldValidator3" ControlToValidate="TextBox3" runat="server" ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Request Form Select -->
+                            <div id="input-visa" class="col-md-12 input-visa ">
+                                <asp:DropDownList CssClass="txtbox" Style="width: 100%; border-radius: 5px; border: none; outline: none; padding: 5px;" ID="DropDownList1" runat="server">
+                                    <asp:ListItem>--Select Visa--</asp:ListItem>
+                                    <asp:ListItem>Student Visa</asp:ListItem>
+                                    <asp:ListItem>Travel Visa</asp:ListItem>
+                                    <asp:ListItem>Working Visa</asp:ListItem>
+                                    <asp:ListItem>Business Visa</asp:ListItem>
+                                    <asp:ListItem>Visitor Visa</asp:ListItem>
+                                    <asp:ListItem>PR Visa</asp:ListItem>
+                                </asp:DropDownList>
+                                <div class="wrap">
+                                    <asp:RequiredFieldValidator ValidationGroup="valid-1" CssClass="my-valid" ID="RequiredFieldValidator4" Display="Dynamic" ControlToValidate="DropDownList1" runat="server" ErrorMessage="*" ForeColor="red" InitialValue="--Select Visa--"></asp:RequiredFieldValidator>
+                                </div>
                             </div>
 
                             <!-- Request Form Select -->
-                            <div id="input-visa" class="col-md-12 input-visa">
-                                <select id="inlineFormCustomSelect1" name="visa" class="custom-select visa" required>
-                                    <option value="">Select Visa</option>
-                                    <option>Student Visa</option>
-                                    <option>Travel visa</option>
-                                    <option>Working Visa</option>
-                                    <option>Business Visa</option>
-                                    <option>Visitor Visa</option>
-                                    <option>PR Visa</option>
-                                </select>
-                            </div>
-
-                            <!-- Request Form Select -->
-                            <div id="input-country" class="col-md-12 input-country">
-                                <select id="inlineFormCustomSelect2" name="country" class="custom-select country" required>
-                                    <option value="">Visa For</option>
-                                    <option>Australia</option>
-                                    <option>Canada</option>
-                                    <option>United Kingdom</option>
-                                    <option>USA</option>
-                                    <option>Singapore</option>
-                                    <option>Netherlands</option>
-                                </select>
+                            <div id="input-country" class="col-md-12 input-country ">
+                                <asp:DropDownList CssClass="txtbox" Style="width: 100%; border-radius: 5px; border: none; outline: none; padding: 5px;" ID="DropDownList2" runat="server">
+                                    <asp:ListItem>--Visa For--</asp:ListItem>
+                                    <asp:ListItem>Canada</asp:ListItem>
+                                    <asp:ListItem>Uk</asp:ListItem>
+                                </asp:DropDownList>
+                                <div class="wrap">
+                                    <asp:RequiredFieldValidator Display="Dynamic" CssClass="my-valid" ID="RequiredFieldValidator5" ValidationGroup="valid-1" ControlToValidate="DropDownList2" runat="server" ErrorMessage="*" ForeColor="red" InitialValue="--Visa For--"></asp:RequiredFieldValidator>
+                                </div>
                             </div>
 
                             <!-- Request Form Button -->
                             <div class="col-md-12 form-btn">
-                                <button type="submit" class="btn btn-primary tra-black-hover submit">Send Request</button>
+                                <asp:Button CssClass="btn btn-primary tra-black-hover submit" ValidationGroup="valid-1" ID="Button1" runat="server" Text="Send Inquiry" OnClick="Button1_Click" />
                             </div>
 
                             <!-- Request Form Message -->
-                            <div class="col-md-12 request-form-msg text-center">
+                            <%--<div class="col-md-12 request-form-msg text-center">
                                 <div class="sending-msg"><span class="loading"></span></div>
-                            </div>
-
+                            </div>--%>
                         </form>
                     </div>
                 </div>

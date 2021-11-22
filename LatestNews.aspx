@@ -1,29 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/immigration1.master" AutoEventWireup="true" CodeFile="LatestNews.aspx.cs" Inherits="LatestNews" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-        <!-- BLOG-1
+    <!-- BLOG-1
 			============================================= -->
     <section id="blog-1" class="wide-60 blog-section division">
         <div class="container">
 
 
             <!-- SECTION TITLE -->
-            <div class="row">
-                <div class="col-md-12 section-title center">
-
+            <div class="row" style="text-align: center !important">
+                <%--<div class="col-sm-12  section-title center">--%>
+                <div style="width: 100%; text-align: center">
                     <!-- Title -->
-                    <h2 class="h2-xs">Our Stories & Latest News</h2>
+                    <h2 class="h2-xs text-center" style="font-size:2rem;margin-bottom:20px">Our Stories & Latest News</h2>
 
                     <!-- Text -->
-                    <p class="p-md">
+                    <%--<p class="p-md text-center">
                         Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, 
 							   felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa
-                    </p>
-
+                    </p>--%>
                 </div>
+
+                <%--</div>--%>
             </div>
             <!-- END SECTION TITLE -->
 
